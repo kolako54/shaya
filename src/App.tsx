@@ -1,5 +1,12 @@
+const hey = "adsad";
+console.log(hey);
+
 const App = () => {
-  return <h1>hello world</h1>;
+  return (
+    <div>
+      <h2>dasdsadasd</h2>
+    </div>
+  );
 };
 
 export default App;
