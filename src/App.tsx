@@ -1,17 +1,17 @@
 import { Route, Routes } from "react-router-dom";
 
 import { Navbar } from "./components/Navbar";
-import { Home } from "./pages/Home";
-import { Signup } from "./pages/Signup";
+import { HomePage } from "./pages/HomePage";
+import { SignupPage } from "./pages/SignupPage";
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <div className="container">
+      <div className="container min-h-screen bg-bgPrimary">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/signup" element={<Signup />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/signup" element={<SignupPage />} />
         </Routes>
       </div>
     </>
