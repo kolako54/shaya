@@ -12,7 +12,10 @@ module.exports = init({
       "warn",
       { allowConstantExport: true },
     ],
+
     "@typescript-eslint/no-var-requires": 0,
     "import/no-unresolved": "off",
+    '@typescript-eslint/no-var-requires': 0,
+    'import/no-unresolved': 'off',
   },
 });
