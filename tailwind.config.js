@@ -94,6 +94,6 @@ module.exports = {
       },
     },
   },
-  // eslint-disable-next-line node/global-require
+
   plugins: [require("tailwindcss-animate")],
 };

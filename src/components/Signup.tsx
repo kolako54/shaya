@@ -34,26 +34,32 @@ export const Signup = () => {
               id="address"
               type="text"
             />
-            <div className="flex flex-row-reverse items-center justify-between">
-              <label className="text-lg text-textMuted" htmlFor="enter-pass">
+            <div className="flex flex-row-reverse items-center justify-between gap-2">
+              <label
+                className="text-nowrap text-lg text-textMuted"
+                htmlFor="enter-pass"
+              >
                 رمز عبور
               </label>
-              <label className=" text-sm text-textMuted" htmlFor="enter-pass">
+              <span className="text-sm text-textMuted">
                 لطفا اعداد فارسی وارد نکنید
-              </label>
+              </span>
             </div>
             <input
               className="mb-8 bg-bgCard p-2 text-white"
               id="enter-pass"
               type="password"
             />
-            <div className="flex flex-row-reverse items-center justify-between">
-              <label className="text-lg text-textMuted" htmlFor="re-enter-pass">
+            <div className="flex flex-row-reverse items-center justify-between gap-2">
+              <label
+                className=" text-nowrap text-lg text-textMuted"
+                htmlFor="re-enter-pass"
+              >
                 رمز عبور مجدد
               </label>
-              <label className=" text-sm text-textMuted" htmlFor="enter-pass">
+              <span className=" text-sm text-textMuted">
                 لطفا اعداد فارسی وارد نکنید
-              </label>
+              </span>
             </div>
             <input
               className="mb-8 bg-bgCard p-2 text-white"
