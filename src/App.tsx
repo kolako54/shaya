@@ -8,7 +8,7 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <div className="container min-h-screen bg-bgPrimary">
+      <div className="min-h-screen bg-bgPrimary">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/signup" element={<SignupPage />} />
