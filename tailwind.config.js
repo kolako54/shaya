@@ -10,6 +10,16 @@ module.exports = {
   ],
   prefix: "",
   theme: {
+    screens: {
+      // all responsive breackpoints
+      "2xs": "300",
+      xs: "470",
+      sm: "600px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+    },
     container: {
       center: true,
       padding: "2rem",
@@ -19,6 +29,11 @@ module.exports = {
     },
     extend: {
       colors: {
+        bgPrimary: "#26282B",
+        bgSecondary: "#1F2023",
+        bgCard: "#212326",
+        textMuted: "#707070",
+        button: "#39DDC9",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -46,7 +61,6 @@ module.exports = {
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
         },
         card: {
           DEFAULT: "hsl(var(--card))",
@@ -72,7 +86,14 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      dropShadow: {
+        glow: [
+          "0 0px 1px rgba(57, 221, 201, 1)",
+          "0 0px 3px rgba(2, 200, 201, 1)",
+        ],
+      },
     },
   },
+  // eslint-disable-next-line node/global-require
   plugins: [require("tailwindcss-animate")],
 };
