@@ -10,6 +10,9 @@ module.exports = {
   ],
   prefix: "",
   theme: {
+    fontFamily: {
+      yekan: ["Yekan Bakh"],
+    },
     screens: {
       // all responsive breackpoints
       "2xs": "300",

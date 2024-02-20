@@ -25,7 +25,7 @@ export const MobileNav = () => {
           className="absolute top-[4.5rem] w-full bg-bgSecondary"
           side="right"
         >
-          <nav className="container grid place-items-end gap-8 text-lg text-textMuted ">
+          <nav className="container grid place-items-end gap-8 text-lg text-textMuted  hover:*:text-white hover:*:transition hover:*:ease-out ">
             <NavLink to="/">سازندگان</NavLink>
             <NavLink to="/">منابع</NavLink>
             <NavLink to="/">قیمت گزاری</NavLink>
