@@ -1,3 +1,5 @@
 export const HomePage = () => {
-  return <h1>خانه</h1>;
+  return (
+    <div className="container pt-4 text-end text-2xl text-textMuted">خانه</div>
+  );
 };
