@@ -1,7 +1,11 @@
+import { useNavigate } from "react-router-dom";
+
 import { MainForm } from "./MainForm";
 import { Card, CardContent, CardHeader } from "./ui/card";
 
 export const Signup = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <Card className="flex flex-col border-none bg-bgSecondary shadow-md">
@@ -22,13 +26,16 @@ export const Signup = () => {
           src="/7123025_logo_google_g_icon.png"
           alt="google-logo"
         />
-        <div className=" text-2xl text-textMuted">ثبت نام با گوگل</div>
+        <div className=" text-xl text-textMuted">ثبت نام با گوگل</div>
       </Card>
       <div className=" flex-row-reverse items-center gap-4 pb-12 text-center sm:flex ">
         <div className=" text-2xl text-textMuted">از قبل اکانت دارید؟</div>
-        <span className="cursor-pointer text-lg text-button drop-shadow-glow  hover:scale-[1.1] hover:shadow-sm">
+        <button
+          onClick={() => navigate("/login")}
+          className="text-lg text-button drop-shadow-glow  hover:scale-[1.1] hover:shadow-sm"
+        >
           ورود
-        </span>
+        </button>
       </div>
     </>
   );
