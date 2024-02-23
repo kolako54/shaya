@@ -66,6 +66,46 @@
   }
 }
 
+@layer components {
+  @media (min-width: 768px) {
+    .dashed {
+      position: relative;
+      max-width: 30rem;
+      min-height: 12rem;
+      background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='rgba(112,112,112,1)' stroke-width='7' stroke-dasharray='10%2c 30' stroke-dashoffset='-20' stroke-linecap='square'/%3e%3c/svg%3e");
+    }
+  }
+  @media (max-width: 768px) {
+    .solid {
+      max-width: 28rem;
+      min-height: 12rem;
+      background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='rgba(112,112,112,1)' stroke-width='8' stroke-dasharray='2%2c 8' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    }
+  }
+
+  .d-rtl {
+    direction: rtl;
+  }
+
+  .Typewriter {
+    display: inline-block;
+    direction: rtl;
+    gap: 2px;
+    /* flex-direction: row-reverse; */
+  }
+
+  .cursor {
+    color: #39ddc9;
+    animation: blinker 1s linear infinite;
+  }
+
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+}
+
 @font-face {
   font-family: Yekan Bakh;
   src: url("/fonts/YekanBakh-Regular.woff");
@@ -76,6 +116,6 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground font-yekan;
+    @apply bg-bgPrimary text-foreground font-yekan;
   }
 }
