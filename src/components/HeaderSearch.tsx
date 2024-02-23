@@ -13,7 +13,7 @@ export const HeaderSearch = () => {
         <Button
           variant="ghost"
           size="lg"
-          className=" relative w-36 self-center rounded-none bg-button p-5  font-semibold hover:bg-button hover:drop-shadow-glow"
+          className=" relative w-36 self-center rounded-none bg-button p-5  font-semibold hover:bg-button hover:drop-shadow-glow hover:transition-all hover:duration-500"
         >
           <img
             src="/Group 47.png"
