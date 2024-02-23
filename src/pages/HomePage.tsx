@@ -1,5 +1,15 @@
+import Footer from "@/components/Footer";
+import { Header } from "@/components/Header";
+import { HeaderSearch } from "@/components/HeaderSearch";
+
 export const HomePage = () => {
   return (
-    <div className="container pt-4 text-end text-2xl text-textMuted">خانه</div>
+    <>
+      <Header />
+      <div className="container">
+        <HeaderSearch />
+      </div>
+      <Footer />
+    </>
   );
 };

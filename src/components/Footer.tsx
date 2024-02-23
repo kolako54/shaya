@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="grid w-full flex-col bg-bgSecondary  p-5 text-center text-textMuted sm:grid-cols-3">
+    <div className="mt-16 grid w-full flex-col bg-bgSecondary  p-5 text-center text-textMuted sm:grid-cols-3">
       <div className="relative">
         <div className="space-y-5 py-5 sm:py-0">
           <p>لورم ایپسوم</p>

@@ -37,6 +37,7 @@ module.exports = {
         bgCard: "#212326",
         textMuted: "#707070",
         button: "#39DDC9",
+        outlineColor: "#33363A",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
