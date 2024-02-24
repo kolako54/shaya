@@ -135,12 +135,16 @@ export const MainForm = () => {
           }}
         />
         <Button
-          type="submit"
           variant="ghost"
-          size="sm"
-          className="mx-auto my-4 rounded-none bg-button px-8 shadow-lg hover:bg-button hover:drop-shadow-glow"
+          size="lg"
+          className=" relative w-36 self-center rounded-none bg-button p-5  font-semibold hover:bg-button hover:drop-shadow-glow hover:transition-all hover:duration-500"
         >
-          ثبت نام
+          <img
+            src="/Group 47.png"
+            alt="btn-img"
+            className=" absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
+          />
+          <span className="z-20 text-lg font-bold text-black">ثبت نام</span>
         </Button>
       </form>
     </Form>

@@ -83,8 +83,30 @@
     }
   }
 
+  .dashed-card {
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='rgba(51, 54, 58, 1)' stroke-width='6' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  }
+
   .d-rtl {
     direction: rtl;
+  }
+
+  .custom-border {
+    border-right: 4px solid #33363a;
+    border-bottom: 4px solid #33363a;
+    border-left: 4px solid #33363a;
+  }
+
+  .line-h-2 {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  @media (min-width: 460px) {
+    .line-h-2 {
+      font-size: 1.25rem;
+      line-height: 2.5;
+    }
   }
 
   .Typewriter {
