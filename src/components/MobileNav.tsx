@@ -22,14 +22,23 @@ export const MobileNav = () => {
       <span className="sr-only">Toggle Menu</span>
       <Sheet open={isOpen} onOpenChange={() => setIsOpen(false)}>
         <SheetContent
-          className="absolute top-[4.5rem] w-full bg-bgSecondary"
+          className=" mt-[4.5rem] w-full bg-bgSecondary"
           side="right"
         >
           <nav className="container grid place-items-end gap-8 text-lg text-textMuted  hover:*:text-white hover:*:transition hover:*:ease-out ">
-            <NavLink to="/">سازندگان</NavLink>
-            <NavLink to="/">منابع</NavLink>
-            <NavLink to="/">قیمت گزاری</NavLink>
-            <NavLink to="/">محصول</NavLink>
+            <NavLink to="/" onClick={() => setIsOpen(false)}>
+              سازندگان
+            </NavLink>
+            <NavLink to="/" onClick={() => setIsOpen(false)}>
+              منابع
+            </NavLink>
+            <NavLink to="/" onClick={() => setIsOpen(false)}>
+              قیمت گزاری
+            </NavLink>
+
+            <NavLink to="/" onClick={() => setIsOpen(false)}>
+              محصول
+            </NavLink>
           </nav>
         </SheetContent>
       </Sheet>
