@@ -1,6 +1,7 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { twMerge } from "tailwind-merge";
 
 import { Sheet, SheetContent } from "./ui/sheet";
 
@@ -12,12 +13,18 @@ export const MobileNav = () => {
       <Menu
         size="2rem"
         onClick={() => setIsOpen(true)}
-        className={`${isOpen ? "hidden" : ""} w-8 cursor-pointer text-textMuted hover:scale-110 sm:hidden`}
+        className={twMerge(
+          "w-8 cursor-pointer text-textMuted hover:scale-110 sm:hidden",
+          isOpen ? "hidden" : "",
+        )}
       />
       <X
         size="2rem"
         onClick={() => setIsOpen(false)}
-        className={` cursor-pointer text-textMuted hover:scale-110 sm:hidden ${!isOpen ? "hidden" : ""}`}
+        className={twMerge(
+          "cursor-pointer text-textMuted hover:scale-110 sm:hidden",
+          !isOpen ? "hidden" : "",
+        )}
       />
       <span className="sr-only">Toggle Menu</span>
       <Sheet open={isOpen} onOpenChange={() => setIsOpen(false)}>
