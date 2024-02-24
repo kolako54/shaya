@@ -43,14 +43,15 @@ export const Header = () => {
         <div className="flex flex-col items-center gap-8">
           <div className="solid dashed flex items-center">
             <img
-              className="absolute left-[-2.7%] top-[50%] hidden  translate-x-[-50%] translate-y-[-50%] -rotate-90 md:block"
+              className="absolute left-[-2.7%] top-[50%] hidden translate-x-[-50%] translate-y-[-50%] -rotate-90 md:block"
               src="/Group 41.png"
               alt=""
             />
             <div className="d-rtl p-4 text-xl text-white sm:p-8 sm:text-2xl ">
               پاترئون محلی برای کسب درآمد افراد مستعد؛ شما چه {typewriter}
               <br />
-              <span className="text-button ">شایسته‌ی</span> کسب درآمد هستید
+              <span className="font-bold text-button">شایسته‌ی</span> کسب درآمد
+              هستید
             </div>
           </div>
           <div className="mb-8  md:mb-0">
