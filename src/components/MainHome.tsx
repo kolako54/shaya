@@ -26,21 +26,21 @@ export const MainHome = () => {
         </div>
       </div>
       <div className="container">
-        <div className="grid gap-y-14 sm:gap-y-10">
-          <div className="grid place-items-center items-center justify-between sm:flex">
+        <div className="grid gap-y-14 2xs:gap-y-8">
+          <div className="group grid place-items-center items-center justify-between sm:flex">
             <img
-              className="relative size-[10rem] opacity-40 hover:opacity-100 hover:transition-all hover:duration-500 md:size-[20rem] lg:size-[30rem]"
+              className=" relative size-[10rem] opacity-40 grayscale transition-all duration-500 group-hover:opacity-70 md:size-[15rem] lg:size-[23rem]"
               src="/XzA1Mzg2MDguanBn.png"
               alt="people1"
             />
             <div className="relative bottom-[.75rem] left-[-1rem] hidden h-[1rem] w-1/4 border-b-4 border-[#33363A]  sm:block md:left-[-2rem] md:w-1/3 ">
-              <div className="absolute right-[-1px] top-2 size-3  rounded-full bg-outlineColor" />
+              <div className="absolute right-[-1px] top-[.4rem] size-4  rounded-full bg-outlineColor" />
             </div>
             <div className="grid gap-2">
               <p className="d-rtl text-center text-lg text-white sm:text-start xl:text-2xl">
                 یک جریان درآمد مکرر ایجاد کنید!
               </p>
-              <div className="dashed-card p-2 text-textMuted md:p-4">
+              <div className="dashed-card p-2 text-textMuted transition-all duration-500 group-hover:text-white/50  md:p-4">
                 <p className="d-rtl mb-4 md:text-lg lg:text-xl ">
                   درآمد قابل اعتماد ماهانه اين امکان را برای من ایجاد کرده است
                   که می توانم زمان کمتری را برای تعقیب چک و زمان بیشتری را برای
@@ -52,20 +52,20 @@ export const MainHome = () => {
               </div>
             </div>
           </div>
-          <div className="grid flex-row-reverse place-items-center items-center justify-between sm:flex">
+          <div className="group grid flex-row-reverse place-items-center items-center justify-between sm:flex">
             <img
-              className="relative size-[10rem] opacity-40 hover:opacity-100 hover:transition-all hover:duration-500 md:size-[20rem] lg:size-[30rem]"
+              className="relative size-[10rem] opacity-40 grayscale transition-all duration-500 group-hover:opacity-70 md:size-[15rem] lg:size-[23rem]"
               src="/XzA4MDY3MTQuanBn.png"
               alt="people2"
             />
             <div className=" relative bottom-[.75rem] right-[-1rem] hidden h-[1rem] w-1/4 border-b-4  border-[#33363A] sm:block md:right-[-2rem] md:w-1/3 ">
-              <div className="absolute left-[-1px] top-2 size-3  rounded-full bg-outlineColor" />
+              <div className="absolute left-[-1px] top-[.4rem] size-4   rounded-full bg-outlineColor" />
             </div>
             <div className="grid gap-2">
-              <p className="d-rtl text-center text-lg text-white sm:text-start xl:text-2xl">
+              <p className="d-rtl text-center text-lg  text-white sm:text-start xl:text-2xl">
                 یک جریان درآمد مکرر ایجاد کنید!
               </p>
-              <div className="dashed-card p-2 text-textMuted md:p-4">
+              <div className="dashed-card p-2 text-textMuted transition-all duration-500 group-hover:text-white/50 md:p-4">
                 <p className="d-rtl mb-4  md:text-lg lg:text-xl ">
                   درآمد قابل اعتماد ماهانه اين امکان را برای من ایجاد کرده است
                   که می توانم زمان کمتری را برای تعقیب چک و زمان بیشتری را برای
@@ -77,20 +77,20 @@ export const MainHome = () => {
               </div>
             </div>
           </div>
-          <div className="grid place-items-center items-center justify-between sm:flex">
+          <div className="group grid place-items-center items-center justify-between sm:flex">
             <img
-              className="relative size-[10rem] opacity-40 hover:opacity-100 hover:transition-all hover:duration-500 md:size-[20rem] lg:size-[30rem]"
+              className="relative size-[10rem] opacity-40 grayscale transition-all duration-500 group-hover:opacity-70 md:size-[15rem] lg:size-[23rem]"
               src="/LmpwZw.png"
               alt="people3"
             />
             <div className="relative bottom-[.75rem] left-[-1rem] hidden h-[1rem] w-1/4 border-b-4 border-[#33363A]  sm:block md:left-[-2rem] md:w-1/3 ">
-              <div className="absolute right-[-1px] top-2 size-3  rounded-full bg-outlineColor" />
+              <div className="absolute right-[-1px] top-[.4rem] size-4   rounded-full bg-outlineColor" />
             </div>
             <div className="grid gap-2">
               <p className="d-rtl text-center text-lg text-white sm:text-start xl:text-2xl">
                 یک جریان درآمد مکرر ایجاد کنید!
               </p>
-              <div className="dashed-card p-2 text-textMuted md:p-4">
+              <div className="dashed-card p-2 text-textMuted transition-all duration-500 group-hover:text-white/50 md:p-4">
                 <p className="d-rtl mb-4  md:text-lg lg:text-xl ">
                   درآمد قابل اعتماد ماهانه اين امکان را برای من ایجاد کرده است
                   که می توانم زمان کمتری را برای تعقیب چک و زمان بیشتری را برای
@@ -102,20 +102,20 @@ export const MainHome = () => {
               </div>
             </div>
           </div>
-          <div className="grid flex-row-reverse place-items-center items-center justify-between sm:flex">
+          <div className="group grid flex-row-reverse place-items-center items-center justify-between sm:flex">
             <img
-              className="relative size-[10rem] opacity-40 hover:opacity-100 hover:transition-all hover:duration-500 md:size-[20rem] lg:size-[30rem]"
+              className="relative size-[10rem] opacity-40 grayscale transition-all duration-500 group-hover:opacity-70 md:size-[15rem] lg:size-[23rem]"
               src="/LmpwZw (1).png"
               alt="people4"
             />
             <div className=" relative bottom-[.75rem] right-[-1rem] hidden h-[1rem]  w-1/4 border-b-4 border-[#33363A] sm:block md:right-[-2rem] md:w-1/3 ">
-              <div className="absolute left-[-1px] top-2 size-3  rounded-full bg-outlineColor" />
+              <div className="absolute left-[-1px] top-[.4rem] size-4   rounded-full bg-outlineColor" />
             </div>
             <div className="grid gap-2">
               <p className="d-rtl text-center text-lg text-white sm:text-start xl:text-2xl">
                 یک جریان درآمد مکرر ایجاد کنید!
               </p>
-              <div className="dashed-card p-2 text-textMuted md:p-4">
+              <div className="dashed-card p-2 text-textMuted transition-all duration-500 group-hover:text-white/50 md:p-4">
                 <p className="d-rtl mb-4  md:text-lg lg:text-xl ">
                   درآمد قابل اعتماد ماهانه اين امکان را برای من ایجاد کرده است
                   که می توانم زمان کمتری را برای تعقیب چک و زمان بیشتری را برای
