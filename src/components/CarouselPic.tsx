@@ -17,6 +17,7 @@ const CarouselPic = () => {
     "/carousel/tailoring.jpg",
     "/carousel/painter.png",
   ];
+  console.log(imgs);
 
   return (
     <div className=" mt-10 flex w-full flex-col items-center gap-7 px-5 text-textMuted">
