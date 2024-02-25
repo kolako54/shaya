@@ -58,7 +58,9 @@ export const Header = () => {
             <Button
               variant="ghost"
               size="lg"
+
               className=" relative w-36 self-center rounded-none bg-button p-5  font-semibold drop-shadow-glow transition-all duration-500 hover:bg-button"
+
             >
               <img
                 src="/Group 47.png"
