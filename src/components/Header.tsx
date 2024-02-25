@@ -34,7 +34,7 @@ export const Header = () => {
             <div className="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
               <img
                 className="size-14 cursor-pointer"
-                src="/icons8-play-64.png"
+                src="/icons/icons8-play-64.png"
                 alt="play"
               />
             </div>
@@ -58,16 +58,9 @@ export const Header = () => {
             <Button
               variant="ghost"
               size="lg"
-
-              className=" relative w-36 self-center rounded-none bg-button p-5  font-semibold drop-shadow-glow transition-all duration-500 hover:bg-button"
-
+              className="w-36 self-center rounded-none bg-button p-5  font-semibold drop-shadow-glow transition-all duration-500 hover:bg-button"
             >
-              <img
-                src="/Group 47.png"
-                alt="btn-img"
-                className=" absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
-              />
-              <span className="z-20 text-lg font-bold text-black">شروع کن</span>
+              <span className="text-lg font-bold text-black">شروع کن</span>
             </Button>
           </div>
         </div>

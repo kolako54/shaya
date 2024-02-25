@@ -1,6 +1,6 @@
 import React from "react";
 
-import Stars from "/stars.svg";
+import Stars from "/icons/stars.svg";
 
 import { Button } from "./ui/button";
 

@@ -13,15 +13,8 @@ export const HeaderSearch = () => {
         <Button
           variant="ghost"
           size="lg"
-
           className=" relative w-36 self-center rounded-none bg-button p-5  font-semibold drop-shadow-glow transition-all duration-500 hover:bg-button"
-
         >
-          <img
-            src="/Group 47.png"
-            alt="btn-img"
-            className=" absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
-          />
           <span className="z-20 text-lg font-bold text-black">جستجو</span>
         </Button>
         <div className="relative flex-1">
@@ -29,14 +22,10 @@ export const HeaderSearch = () => {
             type="search"
             className=" rounded-sm bg-transparent py-8 text-white outline  outline-4 outline-outlineColor"
           />
-          <img
-            className="absolute right-16 top-3 h-10"
-            src="/Line 14.png"
-            alt="srch"
-          />
+          <div className="absolute right-[4rem] top-[.7rem] h-10 border border-outlineColor" />
           <img
             className="absolute right-2 top-3 size-10  "
-            src="/search.png"
+            src="/icons/search.png"
             alt="search"
           />
         </div>

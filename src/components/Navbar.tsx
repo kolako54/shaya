@@ -15,11 +15,11 @@ export const Navbar = () => {
     <div className="sticky top-0 z-[999] bg-bgSecondary py-5 ">
       <header className=" container flex items-center justify-between">
         <img
-          src="/Group 41.png"
+          src="/icons/Group 41.png"
           alt="header-img"
           className="w-[2rem] cursor-pointer"
         />
-        <nav className=" hidden flex-row-reverse gap-10 text-textMuted  hover:*:text-white hover:*:transition hover:*:ease-out sm:flex">
+        <nav className=" hidden flex-row-reverse gap-10 text-textMuted  transition-all hover:*:text-white hover:*:ease-out sm:flex">
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>

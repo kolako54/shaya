@@ -137,15 +137,8 @@ export const MainForm = () => {
         <Button
           variant="ghost"
           size="lg"
-
           className=" relative w-36 self-center rounded-none bg-button p-5  font-semibold drop-shadow-glow transition-all duration-500 hover:bg-button"
-
         >
-          <img
-            src="/Group 47.png"
-            alt="btn-img"
-            className=" absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
-          />
           <span className="z-20 text-lg font-bold text-black">ثبت نام</span>
         </Button>
       </form>

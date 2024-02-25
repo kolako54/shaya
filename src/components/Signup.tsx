@@ -11,7 +11,7 @@ export const Signup = () => {
       <Card className="flex flex-col border-none bg-bgSecondary shadow-md">
         <CardHeader>
           <img
-            src="/Group 43.png"
+            src="/icons/Group 45.png"
             alt="form-img"
             className="mx-auto w-[3rem]"
           />

@@ -54,7 +54,7 @@ export const Login = () => {
       <Card className="flex flex-col border-none bg-bgSecondary shadow-md">
         <CardHeader>
           <img
-            src="/Group 43.png"
+            src="/icons/Group 45.png"
             alt="form-img"
             className="mx-auto w-[3rem]"
           />
@@ -108,11 +108,6 @@ export const Login = () => {
                 size="lg"
                 className=" relative w-36 self-center rounded-none bg-button p-5  font-semibold drop-shadow-glow transition-all duration-500 hover:bg-button"
               >
-                <img
-                  src="/Group 47.png"
-                  alt="btn-img"
-                  className=" absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
-                />
                 <span className="z-20 text-lg font-bold text-black">ورود</span>
               </Button>
             </form>
