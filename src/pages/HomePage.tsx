@@ -1,3 +1,4 @@
+import Carousel from "@/components/CarouselPic";
 import Footer from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { HeaderSearch } from "@/components/HeaderSearch";
@@ -11,6 +12,7 @@ export const HomePage = () => {
         <HeaderSearch />
         <MainHome />
       </div>
+      <Carousel />
       <Footer />
     </>
   );

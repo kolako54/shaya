@@ -17,5 +17,8 @@ module.exports = init({
     "import/no-unresolved": "off",
     "@typescript-eslint/no-var-requires": 0,
     "import/no-unresolved": "off",
+    // "react/jsx-no-duplicate-props": "off",
+    "react/jsx-no-constructed-context-values": "off",
+    "@typescript-eslint/no-shadow": "off",
   },
 });
