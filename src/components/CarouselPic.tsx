@@ -8,13 +8,15 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
+import Cardbox from "./Cardbox";
+import { Button } from "./ui/button";
+
 const CarouselPic = () => {
   const imgs = [
     "/carousel/guitar.jpg",
     "/carousel/tailoring.jpg",
     "/carousel/painter.png",
   ];
-  console.log(imgs);
 
   return (
     <div className=" mt-10 flex w-full flex-col items-center gap-7 px-5 text-textMuted">
@@ -33,7 +35,7 @@ const CarouselPic = () => {
         کسب کنی. به همین راحتی!
       </p>
       <Carousel
-        className="w-2/3 overflow-hidden border-[10px] border-bgSecondary shadow-2xl lg:w-[50rem]"
+        className="overflow-hidden border-[10px] border-bgSecondary shadow-2xl md:w-2/3 lg:w-[50rem]"
         opts={{
           loop: true,
         }}
@@ -47,7 +49,7 @@ const CarouselPic = () => {
           {imgs.map((item, index) => (
             <CarouselItem key={index}>
               <div className="shadow-2xl">
-                <div className="flex aspect-[2/1] items-center justify-center">
+                <div className="flex  items-center justify-center">
                   <img
                     src={item}
                     alt={item.split("/")[2].split(".")[0]}
@@ -70,6 +72,18 @@ const CarouselPic = () => {
         <br />
         مثال زیر رو مثلا برای یک گیتاریست میزنیم:
       </p>
+      <Cardbox />
+
+      <p className="mt-7 text-center text-2xl font-bold text-white">
+        آماده‌ای برای این که عضو بشی؟؟
+      </p>
+      <Button
+        variant="ghost"
+        size="lg"
+        className="my-3 self-center rounded-none bg-button p-2  font-semibold drop-shadow-glow transition-all duration-500 hover:bg-button"
+      >
+        <span className="px-6 text-lg font-bold text-black">شروع کن</span>
+      </Button>
     </div>
   );
 };
