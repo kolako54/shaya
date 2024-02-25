@@ -7,10 +7,10 @@ export const MainHome = () => {
         </p>
         <div className="custom-border relative text-center">
           <div className="flex justify-between">
-            <div className=" relative bottom-[.75rem] h-[1rem] w-1/6 border-b-4 border-[#33363A] sm:w-1/4 md:w-1/3">
+            <div className="pat-border relative bottom-[.75rem] h-[1rem] w-[15%] border-b-4 border-[#33363A]  sm:w-1/4 md:w-1/3">
               <div className="absolute right-[-1px] top-2 size-3 rounded-full bg-outlineColor" />
             </div>
-            <div className=" relative  bottom-[.75rem] h-[1rem] w-1/6 border-b-4 border-[#33363A] sm:w-1/4 md:w-1/3">
+            <div className="pat-border relative bottom-[.75rem]   h-[1rem] w-[15%] border-b-4 border-[#33363A]  sm:w-1/4 md:w-1/3">
               <div className="absolute left-0 top-2 size-3 rounded-full bg-outlineColor" />
             </div>
           </div>
