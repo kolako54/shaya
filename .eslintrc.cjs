@@ -21,6 +21,7 @@ module.exports = init({
     "react/jsx-no-constructed-context-values": "off",
     "@typescript-eslint/no-shadow": "off",
     "react/no-array-index-key": "off",
-    "import/extensions": "off"
+    "import/extensions": "off",
+    "import/no-absolute-path": "off"
   },
 });
