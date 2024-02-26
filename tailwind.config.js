@@ -1,4 +1,3 @@
-/* eslint-disable node/global-require */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],

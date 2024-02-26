@@ -18,10 +18,14 @@ module.exports = init({
     "@typescript-eslint/no-var-requires": 0,
     "import/no-unresolved": "off",
     // "react/jsx-no-duplicate-props": "off",
+    "jsx-a11y/heading-has-content": "off",
     "react/jsx-no-constructed-context-values": "off",
     "@typescript-eslint/no-shadow": "off",
     "react/no-array-index-key": "off",
+    "react-refresh/only-export-components": "off",
     "import/extensions": "off",
-    "import/no-absolute-path": "off"
+    "import/no-absolute-path": "off",
+    "react-refresh/only-export-components": "off",
+    "node/global-require": "off",
   },
 });
