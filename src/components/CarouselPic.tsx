@@ -78,12 +78,8 @@ const CarouselPic = () => {
       <p className="mt-7 text-center text-2xl font-bold text-white">
         آماده‌ای برای این که عضو بشی؟؟
       </p>
-      <Button
-        variant="ghost"
-        size="lg"
-        className="my-3 self-center rounded-none bg-button p-2  font-semibold drop-shadow-glow transition-all duration-500 hover:bg-button"
-      >
-        <span className="px-6 text-lg font-bold text-black">شروع کن</span>
+      <Button variant="primary" size="lg">
+        شروع کن
       </Button>
     </div>
   );

@@ -32,7 +32,7 @@ export const Signup = () => {
         <div className=" text-2xl text-textMuted">از قبل اکانت دارید؟</div>
         <button
           onClick={() => navigate("/login")}
-          className="text-lg text-button drop-shadow-glow transition-all duration-500  hover:scale-[1.1] hover:shadow-sm"
+          className="text-lg text-button drop-shadow-glow transition-all   hover:scale-[1.1] hover:shadow-sm"
         >
           ورود
         </button>

@@ -55,12 +55,8 @@ export const Header = () => {
             </div>
           </div>
           <div className="mb-8  md:mb-0">
-            <Button
-              variant="ghost"
-              size="lg"
-              className="w-36 self-center rounded-none bg-button p-5  font-semibold drop-shadow-glow transition-all duration-500 hover:bg-button"
-            >
-              <span className="text-lg font-bold text-black">شروع کن</span>
+            <Button variant="primary" size="lg">
+              شروع کن
             </Button>
           </div>
         </div>

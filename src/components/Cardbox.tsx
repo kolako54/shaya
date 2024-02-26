@@ -27,12 +27,8 @@ const Cardbox = () => {
             </li>
           </ul>
           <div className="my-10 px-10 text-center">
-            <Button
-              variant="ghost"
-              size="lg"
-              className="relative w-full self-center rounded-none bg-button p-2  font-semibold drop-shadow-glow transition-all duration-500 hover:bg-button"
-            >
-              <span className="z-20 text-lg font-bold text-black">شروع کن</span>
+            <Button variant="primary" size="lg" className="w-full">
+              شروع کن
             </Button>
           </div>
         </div>
@@ -58,12 +54,8 @@ const Cardbox = () => {
             </li>
           </ul>
           <div className="my-10 px-10 text-center">
-            <Button
-              variant="ghost"
-              size="lg"
-              className="relative w-full self-center rounded-none bg-button p-2  font-semibold drop-shadow-glow transition-all duration-500 hover:bg-button"
-            >
-              <span className="z-20 text-lg font-bold text-black">شروع کن</span>
+            <Button variant="primary" size="lg" className="w-full">
+              شروع کن
             </Button>
           </div>
         </div>
@@ -90,12 +82,8 @@ const Cardbox = () => {
             </li>
           </ul>
           <div className="my-10 px-10 text-center">
-            <Button
-              variant="ghost"
-              size="lg"
-              className="w-full self-center rounded-none bg-button p-2  font-semibold drop-shadow-glow transition-all duration-500 hover:bg-button"
-            >
-              <span className="z-20 text-lg font-bold text-black">شروع کن</span>
+            <Button variant="primary" size="lg" className="w-full">
+              شروع کن
             </Button>
           </div>
         </div>

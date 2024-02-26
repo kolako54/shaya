@@ -103,12 +103,8 @@ export const Login = () => {
                   );
                 }}
               />{" "}
-              <Button
-                variant="ghost"
-                size="lg"
-                className=" relative w-36 self-center rounded-none bg-button p-5  font-semibold drop-shadow-glow transition-all duration-500 hover:bg-button"
-              >
-                <span className="z-20 text-lg font-bold text-black">ورود</span>
+              <Button variant="primary" size="lg">
+                ورود
               </Button>
             </form>
           </Form>
@@ -126,7 +122,7 @@ export const Login = () => {
         <div className=" text-2xl text-textMuted">اکانتی ندارید؟</div>
         <button
           onClick={() => navigate("/signup")}
-          className="text-lg text-button drop-shadow-glow  hover:scale-[1.1] hover:shadow-sm"
+          className="text-lg text-button drop-shadow-glow transition-all  hover:scale-[1.1] hover:shadow-sm"
         >
           ثبت نام کنید
         </button>

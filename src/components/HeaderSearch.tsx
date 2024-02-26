@@ -10,12 +10,8 @@ export const HeaderSearch = () => {
       </div>
 
       <div className="container flex flex-col-reverse gap-4 sm:flex-row ">
-        <Button
-          variant="ghost"
-          size="lg"
-          className=" relative w-36 self-center rounded-none bg-button p-5  font-semibold drop-shadow-glow transition-all duration-500 hover:bg-button"
-        >
-          <span className="z-20 text-lg font-bold text-black">جستجو</span>
+        <Button variant="primary" size="lg">
+          جستجو
         </Button>
         <div className="relative flex-1">
           <Input

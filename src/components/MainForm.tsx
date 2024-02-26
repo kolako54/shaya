@@ -134,12 +134,8 @@ export const MainForm = () => {
             );
           }}
         />
-        <Button
-          variant="ghost"
-          size="lg"
-          className=" relative w-36 self-center rounded-none bg-button p-5  font-semibold drop-shadow-glow transition-all duration-500 hover:bg-button"
-        >
-          <span className="z-20 text-lg font-bold text-black">ثبت نام</span>
+        <Button variant="primary" size="lg">
+          ثبت نام
         </Button>
       </form>
     </Form>
