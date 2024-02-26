@@ -67,7 +67,7 @@ export const MainForm = () => {
                 <FormLabel>نام</FormLabel>
                 <FormControl>
                   <Input
-                    className="border-none bg-bgCard text-white"
+                    className="border-none bg-card-color text-white"
                     type="text"
                     {...field}
                   />
@@ -86,7 +86,7 @@ export const MainForm = () => {
                 <FormLabel>آدرس ایمیل</FormLabel>
                 <FormControl>
                   <Input
-                    className="border-none bg-bgCard text-white"
+                    className="border-none bg-card-color text-white"
                     type="emial"
                     {...field}
                   />
@@ -105,7 +105,7 @@ export const MainForm = () => {
                 <FormLabel>رمز عبور</FormLabel>
                 <FormControl>
                   <Input
-                    className="border-none bg-bgCard text-white"
+                    className="border-none bg-card-color text-white"
                     type="password"
                     {...field}
                   />
@@ -124,7 +124,7 @@ export const MainForm = () => {
                 <FormLabel>رمز عبور مجدد</FormLabel>
                 <FormControl>
                   <Input
-                    className="border-none bg-bgCard text-white"
+                    className="border-none bg-card-color text-white"
                     type="password"
                     {...field}
                   />

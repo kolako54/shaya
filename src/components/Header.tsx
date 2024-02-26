@@ -24,8 +24,8 @@ export const Header = () => {
   return (
     <div className="mx-auto bg-[#212326] px-8 pt-12 ">
       <header className=" grid place-items-center gap-4 md:flex md:items-center  md:justify-center md:gap-16">
-        <div className="mb-12 bg-bgSecondary p-4 shadow-2xl sm:p-7">
-          <div className="relative bg-bgPrimary p-4 sm:p-7">
+        <div className="mb-12 bg-secondary-color p-4 shadow-2xl sm:p-7">
+          <div className="relative bg-primary-color p-4 sm:p-7">
             <img
               className="cursor-pointer object-fill opacity-15 shadow-md grayscale "
               src="/images/money.png"
@@ -50,8 +50,8 @@ export const Header = () => {
             <div className="d-rtl p-4 text-xl text-white sm:p-8 sm:text-2xl ">
               پاترئون محلی برای کسب درآمد افراد مستعد؛ شما چه {typewriter}
               <br />
-              <span className="font-bold text-button">شایسته‌ی</span> کسب درآمد
-              هستید
+              <span className="font-bold text-button-color">شایسته‌ی</span> کسب
+              درآمد هستید
             </div>
           </div>
           <div className="mb-8  md:mb-0">

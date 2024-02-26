@@ -14,7 +14,7 @@ export const MobileNav = () => {
         size="2rem"
         onClick={() => setIsOpen(true)}
         className={twMerge(
-          "w-8 cursor-pointer text-textMuted hover:scale-110 sm:hidden",
+          "w-8 cursor-pointer text-primary-text hover:scale-110 sm:hidden",
           isOpen ? "hidden" : "",
         )}
       />
@@ -22,17 +22,17 @@ export const MobileNav = () => {
         size="2rem"
         onClick={() => setIsOpen(false)}
         className={twMerge(
-          "cursor-pointer text-textMuted hover:scale-110 sm:hidden",
+          "cursor-pointer text-primary-text hover:scale-110 sm:hidden",
           !isOpen ? "hidden" : "",
         )}
       />
       <span className="sr-only">Toggle Menu</span>
       <Sheet open={isOpen} onOpenChange={() => setIsOpen(false)}>
         <SheetContent
-          className=" mt-[4.5rem] w-full bg-bgSecondary"
+          className=" mt-[4.5rem] w-full bg-secondary-color"
           side="right"
         >
-          <nav className="container grid place-items-end gap-8 text-lg text-textMuted  hover:*:text-white hover:*:transition hover:*:ease-out ">
+          <nav className="container grid place-items-end gap-8 text-lg text-primary-text  hover:*:text-white hover:*:transition hover:*:ease-out ">
             <NavLink to="/" onClick={() => setIsOpen(false)}>
               سازندگان
             </NavLink>

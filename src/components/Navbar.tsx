@@ -12,19 +12,19 @@ import { MobileNav } from "./MobileNav";
 
 export const Navbar = () => {
   return (
-    <div className="sticky top-0 z-[999] bg-bgSecondary py-5 ">
+    <div className="sticky top-0 z-[999] bg-secondary-color py-5 ">
       <header className=" container flex items-center justify-between">
         <img
           src="/icons/main logo.png"
           alt="header-img"
           className="w-[2rem] cursor-pointer"
         />
-        <nav className=" hidden flex-row-reverse gap-10 text-textMuted  transition-all hover:*:text-white hover:*:ease-out sm:flex">
+        <nav className=" hidden flex-row-reverse gap-10 text-primary-text  transition-all hover:*:text-white hover:*:ease-out sm:flex">
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger>سازندگان</NavigationMenuTrigger>
-                <NavigationMenuContent className="flex flex-col gap-4 bg-bgCard text-xs text-textMuted  hover:*:brightness-0  hover:*:invert hover:*:transition hover:*:ease-out">
+                <NavigationMenuContent className="flex flex-col gap-4 bg-card-color text-xs text-primary-text  hover:*:brightness-0  hover:*:invert hover:*:transition hover:*:ease-out">
                   <div className="flex items-center justify-between ">
                     <img
                       className="size-8"

@@ -20,7 +20,7 @@ const CarouselPic = () => {
   console.log(imgs);
 
   return (
-    <div className=" mt-10 flex w-full flex-col items-center gap-7 px-5 text-textMuted">
+    <div className=" mt-10 flex w-full flex-col items-center gap-7 px-5 text-primary-text">
       <p className="d-rtl text-center text-2xl font-bold text-white">
         چه کسانی از پاترئون استفاده کنن؟
       </p>
@@ -36,7 +36,7 @@ const CarouselPic = () => {
         کسب کنی. به همین راحتی!
       </p>
       <Carousel
-        className="overflow-hidden border-[10px] border-bgSecondary shadow-2xl md:w-2/3 lg:w-[50rem]"
+        className="overflow-hidden border-[10px] border-secondary-color shadow-2xl md:w-2/3 lg:w-[50rem]"
         opts={{
           loop: true,
         }}

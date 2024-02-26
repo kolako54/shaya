@@ -8,13 +8,13 @@ const Cardbox = () => {
   return (
     <div className="flex shrink flex-wrap  items-center justify-around gap-7">
       <div className="flex max-w-[18rem] flex-col">
-        <div className="border-2 border-button bg-bgSecondary px-[7rem] py-[0.6rem]">
+        <div className="border-2 border-button-color bg-secondary-color px-[7rem] py-[0.6rem]">
           <img src={Stars} alt="star1" className="mx-auto size-[32px]" />
         </div>
-        <div className="bg-bgCard py-2 text-center">
+        <div className="bg-card-color py-2 text-center">
           <p className="text-lg font-bold">پنج تومان</p>
         </div>
-        <div className="overflow-hidden bg-bgSecondary">
+        <div className="overflow-hidden bg-secondary-color">
           <ul
             className="space-y-3 p-5 text-[15px]"
             style={{ direction: "rtl" }}
@@ -34,14 +34,14 @@ const Cardbox = () => {
         </div>
       </div>
       <div className="flex max-w-[18rem] flex-col">
-        <div className="flex items-center justify-center gap-3 border-2 border-button bg-bgSecondary px-[7rem] py-[0.6rem]">
+        <div className="flex items-center justify-center gap-3 border-2 border-button-color bg-secondary-color px-[7rem] py-[0.6rem]">
           <img src={Stars} alt="star1" className="size-[32px]" />
           <img src={Stars} alt="star2" className="size-[32px]" />
         </div>
-        <div className="bg-bgCard py-2 text-center">
+        <div className="bg-card-color py-2 text-center">
           <p className="text-lg font-bold">پنج تومان</p>
         </div>
-        <div className="overflow-hidden bg-bgSecondary">
+        <div className="overflow-hidden bg-secondary-color">
           <ul
             className="space-y-3 p-5 text-[15px]"
             style={{ direction: "rtl" }}
@@ -61,15 +61,15 @@ const Cardbox = () => {
         </div>
       </div>
       <div className="flex max-w-[18rem] flex-col">
-        <div className="flex items-center justify-center gap-3 border-2 border-button bg-bgSecondary px-[7rem] py-[0.6rem]">
+        <div className="flex items-center justify-center gap-3 border-2 border-button-color bg-secondary-color px-[7rem] py-[0.6rem]">
           <img src={Stars} alt="star1" className="size-8" />
           <img src={Stars} alt="star2" className="size-8" />
           <img src={Stars} alt="star3" className="size-8" />
         </div>
-        <div className="bg-bgCard py-2 text-center">
+        <div className="bg-card-color py-2 text-center">
           <p className="text-lg font-bold">پنج تومان</p>
         </div>
-        <div className="overflow-hidden bg-bgSecondary">
+        <div className="overflow-hidden bg-secondary-color">
           <ul
             className="space-y-3 p-5 text-[15px]"
             style={{ direction: "rtl" }}
