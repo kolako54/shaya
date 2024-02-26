@@ -20,7 +20,7 @@ const CarouselPic = () => {
   console.log(imgs);
 
   return (
-    <div className=" mt-10 flex w-full flex-col items-center gap-7 px-5 text-textMuted">
+    <div className=" mt-10 flex w-full flex-col items-center gap-7 px-5 text-primary-text">
       <p className="d-rtl text-center text-2xl font-bold text-white">
         چه کسانی از پاترئون استفاده کنن؟
       </p>
@@ -36,7 +36,7 @@ const CarouselPic = () => {
         کسب کنی. به همین راحتی!
       </p>
       <Carousel
-        className="overflow-hidden border-[10px] border-bgSecondary shadow-2xl md:w-2/3 lg:w-[50rem]"
+        className="overflow-hidden border-[10px] border-secondary-color shadow-2xl md:w-2/3 lg:w-[50rem]"
         opts={{
           loop: true,
         }}
@@ -78,12 +78,8 @@ const CarouselPic = () => {
       <p className="mt-7 text-center text-2xl font-bold text-white">
         آماده‌ای برای این که عضو بشی؟؟
       </p>
-      <Button
-        variant="ghost"
-        size="lg"
-        className="my-3 self-center rounded-none bg-button p-2  font-semibold drop-shadow-glow transition-all duration-500 hover:bg-button"
-      >
-        <span className="px-6 text-lg font-bold text-black">شروع کن</span>
+      <Button variant="primary" size="lg">
+        شروع کن
       </Button>
     </div>
   );

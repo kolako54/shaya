@@ -19,11 +19,13 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        primary:
+          "relative w-36 self-center rounded-none bg-button-color p-5 text-lg  font-semibold  text-black drop-shadow-glow transition-all duration-500 hover:bg-button-color",
       },
       size: {
         default: "h-10 px-4 py-2",
         sm: "h-9 rounded-md px-3",
-        lg: "h-11 rounded-md px-8",
+        lg: "h-11 px-8",
         icon: "size-10",
       },
     },
@@ -54,5 +56,4 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 );
 Button.displayName = "Button";
 
-// eslint-disable-next-line react-refresh/only-export-components
 export { Button, buttonVariants };

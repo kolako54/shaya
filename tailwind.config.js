@@ -1,4 +1,3 @@
-/* eslint-disable node/global-require */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
@@ -32,12 +31,12 @@ module.exports = {
     },
     extend: {
       colors: {
-        bgPrimary: "#26282B",
-        bgSecondary: "#1F2023",
-        bgCard: "#212326",
-        textMuted: "#707070",
-        button: "#39DDC9",
-        outlineColor: "#33363A",
+        "primary-color": "#26282B",
+        "secondary-color": "#1F2023",
+        "card-color": "#212326",
+        "primary-text": "#707070",
+        "button-color": "#39DDC9",
+        "outline-color": "#33363A",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

@@ -51,10 +51,10 @@ export const Login = () => {
 
   return (
     <>
-      <Card className="flex flex-col border-none bg-bgSecondary shadow-md">
+      <Card className="flex flex-col border-none bg-secondary-color shadow-md">
         <CardHeader>
           <img
-            src="/Group 43.png"
+            src="/icons/form logo.png"
             alt="form-img"
             className="mx-auto w-[3rem]"
           />
@@ -74,7 +74,7 @@ export const Login = () => {
                       <FormLabel>آدرس ایمیل</FormLabel>
                       <FormControl>
                         <Input
-                          className="border-none bg-bgCard text-white"
+                          className="border-none bg-card-color text-white"
                           type="email"
                           {...field}
                         />
@@ -93,7 +93,7 @@ export const Login = () => {
                       <FormLabel>رمز عبور</FormLabel>
                       <FormControl>
                         <Input
-                          className="border-none bg-bgCard text-white"
+                          className="border-none bg-card-color text-white"
                           type="password"
                           {...field}
                         />
@@ -103,35 +103,26 @@ export const Login = () => {
                   );
                 }}
               />{" "}
-              <Button
-                variant="ghost"
-                size="lg"
-                className=" relative w-36 self-center rounded-none bg-button p-5  font-semibold drop-shadow-glow transition-all duration-500 hover:bg-button"
-              >
-                <img
-                  src="/Group 47.png"
-                  alt="btn-img"
-                  className=" absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
-                />
-                <span className="z-20 text-lg font-bold text-black">ورود</span>
+              <Button variant="primary" size="lg">
+                ورود
               </Button>
             </form>
           </Form>
         </CardContent>
       </Card>
-      <Card className="mb-10 mt-8 flex cursor-pointer items-center justify-between border-none bg-bgSecondary p-4 shadow-md transition-all ease-in-out hover:scale-[1.03] hover:shadow-xl">
+      <Card className="mb-10 mt-8 flex cursor-pointer items-center justify-between border-none bg-secondary-color p-4 shadow-md transition-all ease-in-out hover:scale-[1.03] hover:shadow-xl">
         <img
           className="w-[6rem]  object-cover opacity-20"
-          src="/7123025_logo_google_g_icon.png"
+          src="/icons/google logo.png"
           alt="google-logo"
         />
-        <div className=" text-xl text-textMuted">ورود با گوگل</div>
+        <div className=" text-xl text-primary-text">ورود با گوگل</div>
       </Card>
       <div className=" flex-row-reverse items-center gap-4 pb-12 text-center sm:flex ">
-        <div className=" text-2xl text-textMuted">اکانتی ندارید؟</div>
+        <div className=" text-2xl text-primary-text">اکانتی ندارید؟</div>
         <button
           onClick={() => navigate("/signup")}
-          className="text-lg text-button drop-shadow-glow  hover:scale-[1.1] hover:shadow-sm"
+          className="text-lg text-button-color drop-shadow-glow transition-all  hover:scale-[1.1] hover:shadow-sm"
         >
           ثبت نام کنید
         </button>

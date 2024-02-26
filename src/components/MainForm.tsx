@@ -67,7 +67,7 @@ export const MainForm = () => {
                 <FormLabel>نام</FormLabel>
                 <FormControl>
                   <Input
-                    className="border-none bg-bgCard text-white"
+                    className="border-none bg-card-color text-white"
                     type="text"
                     {...field}
                   />
@@ -86,7 +86,7 @@ export const MainForm = () => {
                 <FormLabel>آدرس ایمیل</FormLabel>
                 <FormControl>
                   <Input
-                    className="border-none bg-bgCard text-white"
+                    className="border-none bg-card-color text-white"
                     type="emial"
                     {...field}
                   />
@@ -105,7 +105,7 @@ export const MainForm = () => {
                 <FormLabel>رمز عبور</FormLabel>
                 <FormControl>
                   <Input
-                    className="border-none bg-bgCard text-white"
+                    className="border-none bg-card-color text-white"
                     type="password"
                     {...field}
                   />
@@ -124,7 +124,7 @@ export const MainForm = () => {
                 <FormLabel>رمز عبور مجدد</FormLabel>
                 <FormControl>
                   <Input
-                    className="border-none bg-bgCard text-white"
+                    className="border-none bg-card-color text-white"
                     type="password"
                     {...field}
                   />
@@ -134,19 +134,8 @@ export const MainForm = () => {
             );
           }}
         />
-        <Button
-          variant="ghost"
-          size="lg"
-
-          className=" relative w-36 self-center rounded-none bg-button p-5  font-semibold drop-shadow-glow transition-all duration-500 hover:bg-button"
-
-        >
-          <img
-            src="/Group 47.png"
-            alt="btn-img"
-            className=" absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
-          />
-          <span className="z-20 text-lg font-bold text-black">ثبت نام</span>
+        <Button variant="primary" size="lg">
+          ثبت نام
         </Button>
       </form>
     </Form>

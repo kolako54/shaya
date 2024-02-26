@@ -11,8 +11,9 @@ export const HomePage = () => {
       <div className="container">
         <HeaderSearch />
         <MainHome />
+        <Carousel />
+        {/* Cardbox  */}
       </div>
-      <Carousel />
       <Footer />
     </>
   );

@@ -192,6 +192,6 @@
   }
 
   body {
-    @apply bg-bgPrimary text-foreground font-yekan;
+    @apply bg-primary-color text-foreground font-yekan;
   }
 }

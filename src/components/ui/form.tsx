@@ -37,9 +37,13 @@ const FormField = <
   );
 };
 
+const FormItemContext = React.createContext<FormItemContextValue>(
+  {} as FormItemContextValue,
+);
+
 const useFormField = () => {
   const fieldContext = React.useContext(FormFieldContext);
-  // eslint-disable-next-line @typescript-eslint/no-use-before-define
+
   const itemContext = React.useContext(FormItemContext);
   const { getFieldState, formState } = useFormContext();
 
@@ -64,10 +68,6 @@ const useFormField = () => {
 interface FormItemContextValue {
   id: string;
 }
-
-const FormItemContext = React.createContext<FormItemContextValue>(
-  {} as FormItemContextValue,
-);
 
 const FormItem = React.forwardRef<
   HTMLDivElement,
@@ -96,7 +96,7 @@ const FormLabel = React.forwardRef<
   return (
     <Label
       ref={ref}
-      className={cn(`text-base text-end text-textMuted`, className)}
+      className={cn(`text-base text-end text-primary-text`, className)}
       htmlFor={formItemId}
       {...props}
     />
@@ -176,6 +176,5 @@ export {
   FormItem,
   FormLabel,
   FormMessage,
-  // eslint-disable-next-line react-refresh/only-export-components
   useFormField,
 };
