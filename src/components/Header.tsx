@@ -28,13 +28,13 @@ export const Header = () => {
           <div className="relative bg-bgPrimary p-4 sm:p-7">
             <img
               className="cursor-pointer object-fill opacity-15 shadow-md grayscale "
-              src="/8166b56287218017e2664e41dd7614bf.png"
+              src="/images/money.png"
               alt="home-header"
             />
             <div className="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
               <img
                 className="size-14 cursor-pointer"
-                src="/icons/icons8-play-64.png"
+                src="/icons/play icon.png"
                 alt="play"
               />
             </div>

@@ -30,7 +30,7 @@ export const MainHome = () => {
           <div className="group grid place-items-center items-center justify-between sm:flex">
             <img
               className=" relative size-[10rem] opacity-40 grayscale transition-all duration-500 group-hover:opacity-70 md:size-[15rem] lg:size-[23rem]"
-              src="/XzA1Mzg2MDguanBn.png"
+              src="/images/people1.png"
               alt="people1"
             />
             <div className="relative bottom-[.75rem] left-[-1rem] hidden h-[1rem] w-1/4 border-b-4 border-[#33363A]  sm:block md:left-[-2rem] md:w-1/3 ">
@@ -55,7 +55,7 @@ export const MainHome = () => {
           <div className="group grid flex-row-reverse place-items-center items-center justify-between sm:flex">
             <img
               className="relative size-[10rem] opacity-40 grayscale transition-all duration-500 group-hover:opacity-70 md:size-[15rem] lg:size-[23rem]"
-              src="/XzA4MDY3MTQuanBn.png"
+              src="/images/people2.png"
               alt="people2"
             />
             <div className=" relative bottom-[.75rem] right-[-1rem] hidden h-[1rem] w-1/4 border-b-4  border-[#33363A] sm:block md:right-[-2rem] md:w-1/3 ">
@@ -80,7 +80,7 @@ export const MainHome = () => {
           <div className="group grid place-items-center items-center justify-between sm:flex">
             <img
               className="relative size-[10rem] opacity-40 grayscale transition-all duration-500 group-hover:opacity-70 md:size-[15rem] lg:size-[23rem]"
-              src="/LmpwZw.png"
+              src="/images/people3.png"
               alt="people3"
             />
             <div className="relative bottom-[.75rem] left-[-1rem] hidden h-[1rem] w-1/4 border-b-4 border-[#33363A]  sm:block md:left-[-2rem] md:w-1/3 ">
@@ -105,7 +105,7 @@ export const MainHome = () => {
           <div className="group grid flex-row-reverse place-items-center items-center justify-between sm:flex">
             <img
               className="relative size-[10rem] opacity-40 grayscale transition-all duration-500 group-hover:opacity-70 md:size-[15rem] lg:size-[23rem]"
-              src="/LmpwZw (1).png"
+              src="/images/people4.png"
               alt="people4"
             />
             <div className=" relative bottom-[.75rem] right-[-1rem] hidden h-[1rem]  w-1/4 border-b-4 border-[#33363A] sm:block md:right-[-2rem] md:w-1/3 ">

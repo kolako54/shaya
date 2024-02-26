@@ -15,7 +15,7 @@ export const Navbar = () => {
     <div className="sticky top-0 z-[999] bg-bgSecondary py-5 ">
       <header className=" container flex items-center justify-between">
         <img
-          src="/icons/Group 41.png"
+          src="/icons/main logo.png"
           alt="header-img"
           className="w-[2rem] cursor-pointer"
         />
