@@ -20,7 +20,7 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         primary:
-          "relative w-36 self-center rounded-none bg-button-color p-5 text-lg  font-semibold  text-black drop-shadow-glow transition-all duration-500 hover:bg-button-color",
+          " relative w-36 self-center rounded-none bg-button-color p-5 text-lg   font-semibold  text-black drop-shadow-glow transition-all duration-500 hover:bg-button-color",
       },
       size: {
         default: "h-10 px-4 py-2",
@@ -40,17 +40,21 @@ export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
   asChild?: boolean;
+  children?: React.ReactNode;
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, asChild = false, ...props }, ref) => {
+  ({ className, variant, size, children, asChild = false, ...props }, ref) => {
     const Comp = asChild ? Slot : "button";
     return (
       <Comp
         className={cn(buttonVariants({ variant, size, className }))}
         ref={ref}
         {...props}
-      />
+      >
+        <div className="absolute inset-y-0 right-3 w-1/2 skew-x-[-25deg]  bg-gradient-to-r  from-white/20 to-button-color " />
+        <div className="z-[99]">{children}</div>
+      </Comp>
     );
   },
 );

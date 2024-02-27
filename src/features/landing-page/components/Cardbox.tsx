@@ -1,8 +1,5 @@
-import React from "react";
-
 import Stars from "/icons/stars.svg";
-
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 
 const Cardbox = () => {
   return (

@@ -1,5 +1,6 @@
 import Autoplay from "embla-carousel-autoplay";
 
+import { Button } from "@/components/ui/button";
 import {
   Carousel,
   CarouselContent,
@@ -9,7 +10,6 @@ import {
 } from "@/components/ui/carousel";
 
 import Cardbox from "./Cardbox";
-import { Button } from "./ui/button";
 
 const CarouselPic = () => {
   const imgs = [
