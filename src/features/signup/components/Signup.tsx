@@ -1,7 +1,8 @@
 import { useNavigate } from "react-router-dom";
 
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
+
 import { MainForm } from "./MainForm";
-import { Card, CardContent, CardHeader } from "./ui/card";
 
 export const Signup = () => {
   const navigate = useNavigate();

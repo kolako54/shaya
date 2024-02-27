@@ -3,7 +3,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { twMerge } from "tailwind-merge";
 
-import { Sheet, SheetContent } from "./ui/sheet";
+import { Sheet, SheetContent } from "@/components/ui/sheet";
 
 export const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);

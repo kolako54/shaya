@@ -1,5 +1,3 @@
-import React from "react";
-
 const Footer = () => {
   return (
     <div className="mt-16 grid w-full flex-col bg-secondary-color  p-5 text-center text-primary-text sm:grid-cols-3">

@@ -52,7 +52,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
         {...props}
       >
-        <div className="absolute inset-y-0 right-3 w-[4rem] skew-x-[-25deg]  bg-gradient-to-r  from-white/20 to-button-color " />
+        <div className="absolute inset-y-0 right-3 w-1/2 skew-x-[-25deg]  bg-gradient-to-r  from-white/20 to-button-color " />
         <div className="z-[99]">{children}</div>
       </Comp>
     );
