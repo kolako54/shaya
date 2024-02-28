@@ -47,8 +47,9 @@ const CarouselPic = () => {
         ]}
       >
         <CarouselContent>
-          {imgs.map((item, index) => (
-            <CarouselItem key={index}>
+          {imgs.map((item) => (
+            /* do not use array index as key - cuase the images path are uinque i use the path itself for key value */
+            <CarouselItem key={item}>
               <div className="shadow-2xl">
                 <div className="flex  items-center justify-center">
                   <img
