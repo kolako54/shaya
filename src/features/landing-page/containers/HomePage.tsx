@@ -1,9 +1,9 @@
-import Carousel from "@/features/landing-page/components/CarouselPic";
-import Footer from "@/features/landing-page/components/Footer";
-import { HeaderSearch } from "@/features/landing-page/components/HeaderSearch";
-import { MainHome } from "@/features/landing-page/components/MainHome";
+import { Carousel } from "@/components/ui/carousel";
 
+import Footer from "../components/Footer";
 import { Header } from "../components/Header";
+import { HeaderSearch } from "../components/HeaderSearch";
+import { MainHome } from "../components/MainHome";
 
 export const HomePage = () => {
   return (

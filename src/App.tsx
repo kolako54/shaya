@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 
-import { HomePage } from "./features/landing-page/containers/HomePage";
+import { HomePage } from "./features/Landing-page/containers/HomePage";
 import { Navbar } from "./features/Navbar/components/Navbar";
-import { LoginPage } from "./features/signup/containers/LoginPage";
-import { SignupPage } from "./features/signup/containers/SignupPage";
+import { LoginPage } from "./features/Signup/containers/LoginPage";
+import { SignupPage } from "./features/Signup/containers/SignupPage";
 
 const App = () => {
   return (
