@@ -95,6 +95,7 @@ module.exports = {
           "0 0px 1px rgba(57, 221, 201, 1)",
           "0 0px 3px rgba(2, 200, 201, 1)",
         ],
+        shine: ["0 0px 0px rgba(800,400,300)", "0 0px 1px rgba(900,900,990)"],
       },
     },
   },

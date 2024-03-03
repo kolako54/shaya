@@ -1,4 +1,5 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+import { twMerge } from "tailwind-merge";
 
 import {
   NavigationMenu,
@@ -11,8 +12,15 @@ import {
 import { MobileNav } from "./MobileNav";
 
 export const Navbar = () => {
+  const location = useLocation();
+
   return (
-    <div className="sticky top-0 z-[999] bg-secondary-color py-5 ">
+    <div
+      className={twMerge(
+        "sticky top-0 z-[999] bg-secondary-color py-5 ",
+        location.pathname === "/" ? "block" : "hidden",
+      )}
+    >
       <header className=" container flex items-center justify-between">
         <img
           src="/icons/main logo.png"
