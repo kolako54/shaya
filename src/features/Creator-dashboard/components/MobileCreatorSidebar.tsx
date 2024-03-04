@@ -9,12 +9,12 @@ export const MobileCreatorSidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <>
+    <div className="z-10">
       <Menu
-        size="2rem"
+        size="1.5rem"
         onClick={() => setIsOpen(true)}
         className={twMerge(
-          "w-8 mt-4 mr-4 cursor-pointer text-primary-text transition-all duration-500 hover:scale-110 sm:hidden",
+          "cursor-pointer absolute top-4 right-4 text-white transition-all duration-500 hover:scale-110 sm:hidden",
           isOpen ? "hidden" : "",
         )}
       />
@@ -23,7 +23,7 @@ export const MobileCreatorSidebar = () => {
       <Sheet open={isOpen} onOpenChange={() => setIsOpen(false)}>
         <SheetContent className="w-full bg-secondary-color">
           <div className="flex flex-col ">
-            <div className="flex items-center justify-between">
+            <div className="flex  items-center justify-between">
               <X
                 size="2rem"
                 onClick={() => setIsOpen(false)}
@@ -39,7 +39,7 @@ export const MobileCreatorSidebar = () => {
               />
             </div>
             <ul>
-              <nav className="d-rtl flex list-disc flex-col gap-6 px-6 pt-8 text-lg text-white/75 transition-all duration-500 hover:*:drop-shadow-shine ">
+              <nav className="d-rtl flex list-disc flex-col items-start gap-6 px-6 pt-8 text-lg text-white/75 transition-all duration-500 hover:*:drop-shadow-shine ">
                 <NavLink to="#">
                   <li>صفحه‌ی من</li>
                 </NavLink>
@@ -66,6 +66,6 @@ export const MobileCreatorSidebar = () => {
           </div>
         </SheetContent>
       </Sheet>
-    </>
+    </div>
   );
 };

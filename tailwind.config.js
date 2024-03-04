@@ -14,9 +14,9 @@ module.exports = {
       yekan: ["Yekan Bakh"],
     },
     screens: {
-      // all responsive breackpoints
       "2xs": "300",
       xs: "470",
+
       sm: "600px",
       md: "768px",
       lg: "1024px",
