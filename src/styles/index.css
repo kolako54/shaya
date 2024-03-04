@@ -121,6 +121,18 @@
     direction: rtl;
   }
 
+  .custom-scroll {
+    /* 40px - more place for scrollbar, is hidden under parent box */
+    display: flex;
+    padding-inline: 1rem;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+
   .custom-border {
     border-right: 4px solid #33363a;
 

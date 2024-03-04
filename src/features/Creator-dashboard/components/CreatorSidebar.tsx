@@ -4,15 +4,15 @@ import { MobileCreatorSidebar } from "./MobileCreatorSidebar";
 
 export const CreatorSidebar = () => {
   return (
-    <div className="flex justify-end">
-      <div className="fixed hidden h-full w-[21rem] flex-col items-end bg-secondary-color px-20 sm:flex">
+    <div className="basis-[15rem]">
+      <div className=" hidden min-h-full flex-col items-end bg-secondary-color pl-4 pr-12 sm:flex  lg:px-20 ">
         <img
           className="w-14 self-center py-8"
           src="/icons/main logo.png"
           alt="sidebar-img"
         />
         <ul>
-          <nav className="d-rtl flex list-disc flex-col gap-6 text-lg text-white/75 transition-all duration-500 hover:*:drop-shadow-shine ">
+          <nav className="d-rtl flex list-disc flex-col gap-6 text-lg text-white/75 transition-all duration-500 *:first:*:text-nowrap hover:*:drop-shadow-shine ">
             <NavLink to="#">
               <li>صفحه‌ی من</li>
             </NavLink>
