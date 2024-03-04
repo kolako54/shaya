@@ -1,12 +1,12 @@
+import { Home } from "lucide-react";
 import { Route, Routes } from "react-router-dom";
 
-import { Collection } from "./features/Creator-dashboard/components/Collection";
-import { Home } from "./features/Creator-dashboard/components/Home";
-import { CreatorPage } from "./features/Creator-dashboard/containers/CreatorPage";
-import { HomePage } from "./features/Landing-page/containers/HomePage";
-import { Navbar } from "./features/Navbar/components/Navbar";
-import { LoginPage } from "./features/Signup/containers/LoginPage";
-import { SignupPage } from "./features/Signup/containers/SignupPage";
+import { Collection } from "./features/creator-dashboard/components/Collection";
+import { CreatorPage } from "./features/creator-dashboard/containers/CreatorPage";
+import { HomePage } from "./features/landing-page/containers/HomePage";
+import { Navbar } from "./features/navbar/components/Navbar";
+import { LoginPage } from "./features/signup/containers/LoginPage";
+import { SignupPage } from "./features/signup/containers/SignupPage";
 
 const App = () => {
   return (
