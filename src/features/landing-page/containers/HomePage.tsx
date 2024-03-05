@@ -1,5 +1,4 @@
-import { Carousel } from "@/components/ui/carousel";
-
+import CarouselPic from "../components/CarouselPic";
 import Footer from "../components/Footer";
 import { Header } from "../components/Header";
 import { HeaderSearch } from "../components/HeaderSearch";
@@ -12,7 +11,7 @@ export const HomePage = () => {
       <div className="container">
         <HeaderSearch />
         <MainHome />
-        <Carousel />
+        <CarouselPic />
         {/* Cardbox  */}
       </div>
       <Footer />
