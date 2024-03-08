@@ -133,6 +133,48 @@
     -webkit-overflow-scrolling: touch;
   }
 
+  .custom-gradient {
+    background:
+      linear-gradient(#212326, #212326) 50% 50% / calc(100% - 4px)
+        calc(100% - 4px) no-repeat,
+      linear-gradient(50deg, #39ddc9 0%, #39ddc9 90%, #ffffff 100%);
+    padding: calc(3px + 2rem);
+    box-sizing: border-box;
+  }
+
+  .border-gradient-t {
+    background-image: linear-gradient(
+      to top,
+      rgb(160, 154, 154),
+      rgba(33, 33, 33, 1)
+    );
+  }
+  .border-gradient-b {
+    background-image: linear-gradient(
+      to bottom,
+      rgb(160, 154, 154),
+      rgb(33, 33, 33, 1)
+    );
+  }
+  .border-gradient-l {
+    width: 1px;
+    height: 1px;
+    background-image: linear-gradient(
+      to left,
+      rgb(160, 154, 154),
+      rgb(33, 33, 33, 1)
+    );
+  }
+  .border-gradient-r {
+    width: 1px;
+    height: 1px;
+    background-image: linear-gradient(
+      to right,
+      rgb(160, 154, 154),
+      rgb(33, 33, 33, 1)
+    );
+  }
+
   .custom-border {
     border-right: 4px solid #33363a;
 
