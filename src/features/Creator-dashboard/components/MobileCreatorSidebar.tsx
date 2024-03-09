@@ -9,12 +9,12 @@ export const MobileCreatorSidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="z-10">
+    <div>
       <Menu
         size="1.5rem"
         onClick={() => setIsOpen(true)}
         className={twMerge(
-          "cursor-pointer absolute top-4 right-4 text-white transition-all duration-500 hover:scale-110 sm:hidden",
+          "cursor-pointer z-20 absolute top-4 right-4 text-white transition-all duration-500 hover:scale-110 sm:hidden",
           isOpen ? "hidden" : "",
         )}
       />
