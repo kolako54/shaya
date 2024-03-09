@@ -15,10 +15,10 @@ const buttonVariants = cva(
           "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:
           "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
-        secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        secondary:
+          "relative w-36 self-center rounded-none bg-white/80 p-5 text-lg   font-semibold  text-black transition-all duration-500 hover:bg-white/80",
         primary:
           " relative w-36 self-center rounded-none bg-button-color p-5 text-lg   font-semibold  text-black drop-shadow-glow transition-all duration-500 hover:bg-button-color",
       },
@@ -52,7 +52,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
         {...props}
       >
-        <div className="absolute inset-y-0 right-3 w-1/2 skew-x-[-25deg]  bg-gradient-to-r  from-white/20 to-button-color " />
+        <div className="absolute inset-y-0 right-3 w-1/2 skew-x-[-25deg]  bg-gradient-to-r  from-white/20 to-transparent " />
         <div className="z-[99]">{children}</div>
       </Comp>
     );
