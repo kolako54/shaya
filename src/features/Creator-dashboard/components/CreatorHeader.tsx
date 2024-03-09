@@ -1,4 +1,4 @@
-import { NavLink, Outlet, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { twMerge } from "tailwind-merge";
 
 export const CreatorHeader = () => {
@@ -6,7 +6,7 @@ export const CreatorHeader = () => {
   return (
     <>
       <div className="relative z-10 bg-secondary-color p-4 shadow-md shadow-black/40 ">
-        <div className=" border-gradient-l absolute bottom-0 left-1/4 w-1/3 sm:left-1/4  sm:w-1/3 " />
+        <div className=" border-gradient-l absolute bottom-0 left-1/4 w-1/3 sm:left-1/4  sm:w-1/3  " />
         <div className=" border-gradient-r  absolute bottom-0 right-1/4 w-1/3 sm:right-[8.4rem]  sm:w-1/3  " />
         <div className=" border-gradient-t absolute right-0 top-[12rem]  hidden h-[18rem] w-[1px] translate-y-[-50%] bg-white sm:block" />
         <div className=" border-gradient-b absolute right-0 top-[26rem]  hidden h-[15rem] w-[1px] translate-y-[-50%] bg-white sm:block" />
@@ -98,13 +98,3 @@ export const CreatorHeader = () => {
     </>
   );
 };
-
-// image
-
-/*   <img
-        className=" relative bottom-[10rem] left-1/2 z-10  w-1/5 translate-x-[-50%] translate-y-[-50%] shadow-md outline outline-[#21242a] grayscale sm:w-1/4 sm:outline-[1rem] md:left-[15rem] md:top-[-11rem] md:w-auto"
-        src="/images/profile-image.png"
-        alt="profile-img"
-      />
-
- */
