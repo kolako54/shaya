@@ -13,8 +13,8 @@ export const Home = () => {
           بشناسن؛ پلن‌هات رو باهاشون به اشتراک بذار.
         </CardDescription>
         <div className="relative">
-          <div className="border-gradient-r absolute right-4 w-1/2  2xl:right-0" />
-          <div className="border-gradient-l absolute left-4 w-1/2 2xl:left-0" />
+          <div className="border-gradient-l absolute right-1/2 w-1/2 sm:w-1/2" />
+          <div className="border-gradient-r absolute left-1/2 w-1/2 sm:w-1/2" />
         </div>
         <CardContent className="d-rtl mx-0 mt-10 flex flex-col gap-8 p-0 text-lg font-bold text-white">
           <div className="flex justify-between gap-4">
@@ -72,8 +72,8 @@ export const Home = () => {
           راحتی به آثارت رو به دیگران ارائه بده.
         </CardDescription>
         <div className="relative">
-          <div className="border-gradient-r absolute right-4 w-1/2  2xl:right-0" />
-          <div className="border-gradient-l absolute left-4 w-1/2 2xl:left-0" />
+          <div className="border-gradient-l absolute right-1/2 w-1/2 sm:w-1/2 " />
+          <div className="border-gradient-r absolute left-1/2 w-1/2 sm:w-1/2 " />
         </div>
         <p className="mt-10 text-xl text-primary-text">
           محصولات دیجیتالیت رو, مثل ویدیوها و عکس‌ها, مستقیما روی پاترئون به
