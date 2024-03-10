@@ -6,10 +6,10 @@ export const CreatorHeader = () => {
   return (
     <>
       <div className="relative z-10 bg-secondary-color p-4 shadow-md shadow-black/40 ">
-        <div className=" border-gradient-l absolute bottom-0 left-1/4 w-1/3 sm:left-1/4  sm:w-1/3  " />
-        <div className=" border-gradient-r  absolute bottom-0 right-1/4 w-1/3 sm:right-[8.4rem]  sm:w-1/3  " />
-        <div className=" border-gradient-t absolute right-0 top-[12rem]  hidden h-[18rem] w-[1px] translate-y-[-50%] bg-white sm:block" />
-        <div className=" border-gradient-b absolute right-0 top-[26rem]  hidden h-[15rem] w-[1px] translate-y-[-50%] bg-white sm:block" />
+        <div className=" border-gradient-l absolute bottom-0 left-1/4 w-1/3 sm:left-1/4  sm:w-1/4  " />
+        <div className=" border-gradient-r  absolute bottom-0 right-1/4 w-1/3 sm:right-1/4  sm:w-1/4  " />
+        <div className=" border-gradient-t absolute right-0 top-1/2  hidden h-1/2 w-[1px] translate-y-[-50%] bg-primary-text sm:block " />
+        <div className=" border-gradient-b absolute right-0 top-full hidden h-1/2 w-[1px] translate-y-[-50%] bg-primary-text  sm:block" />
         <img
           className="w-full object-cover  opacity-40  grayscale lg:max-h-[25rem]"
           src="/images/profile-background.png"
