@@ -25,7 +25,7 @@ export const CreatorHeader = () => {
 
         <ul className="custom-scroll">
           <nav className="d-rtl flex justify-center gap-8 pb-2 text-lg  text-white *:transition-all *:duration-500 hover:*:text-button-color  sm:*:text-xl md:gap-16">
-            <NavLink className="group relative" to="">
+            <NavLink className="group relative" to="#">
               <li className="mb-1 text-nowrap">درباره‌ی من</li>
               <div
                 className={twMerge(
@@ -35,7 +35,7 @@ export const CreatorHeader = () => {
                 )}
               />
             </NavLink>
-            <NavLink className="group relative" to="">
+            <NavLink className="group relative" to="#">
               <li className="mb-1">عضویت</li>
               <div
                 className={twMerge(
@@ -45,7 +45,7 @@ export const CreatorHeader = () => {
                 )}
               />
             </NavLink>
-            <NavLink className="group relative " to="">
+            <NavLink className="group relative " to="#">
               <li className="mb-1">خرید</li>
               <div
                 className={twMerge(
@@ -55,12 +55,7 @@ export const CreatorHeader = () => {
                 )}
               />
             </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                twMerge("group relative", isActive ? "text-button-color" : "")
-              }
-              to="/creator/collection"
-            >
+            <NavLink className="group relative" to="#">
               <li className="mb-1">کالکشن</li>
               <div
                 className={twMerge(
@@ -72,23 +67,16 @@ export const CreatorHeader = () => {
             </NavLink>
             <NavLink
               className={({ isActive }) =>
-                twMerge(
-                  "group relative",
-                  isActive || pathname === "/creator"
-                    ? " text-button-color"
-                    : "",
-                )
+                twMerge("group relative", isActive ? " text-button-color" : "")
               }
-              to="/creator/home"
+              to="/creator"
             >
               <li className="mb-1">خانه</li>
               <div
                 className={twMerge(
                   "absolute bottom-0 right-1/2   size-[.4rem] rounded-full  bg-button-color",
                   "group-hover:bg-button-color group-hover:block",
-                  pathname === "/creator" || pathname === "/creator/home"
-                    ? "block"
-                    : "hidden",
+                  pathname === "/creator" ? "block" : "hidden",
                 )}
               />
             </NavLink>
