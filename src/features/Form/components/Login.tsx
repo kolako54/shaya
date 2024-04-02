@@ -1,7 +1,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-import { z } from "zod";
+import type { z } from "zod";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -14,34 +14,16 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-
-const formSchema = z
-  .object({
-    emailAddress: z.string().email({
-      message: "! ایمیل نامعتبر",
-    }),
-    password: z.string().min(4, {
-      message: "! رمز عبور الزامی است . رمز عبور باید حداقل چهار کاراکتر باشد",
-    }),
-    passwordConfirm: z.string().min(4, {
-      message:
-        "! رمز عبور تأییدی الزامی است . رمز عبور باید حداقل چهار کاراکتر باشد",
-    }),
-  })
-  .refine((data) => data.password === data.passwordConfirm, {
-    message: "! رمزهای عبور مطابقت ندارند",
-    path: ["passwordConfirm"],
-  });
+import { LoginformSchema } from "@/lib/validations";
 
 export const Login = () => {
   const navigate = useNavigate();
 
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
+  const form = useForm<z.infer<typeof LoginformSchema>>({
+    resolver: zodResolver(LoginformSchema),
     defaultValues: {
       emailAddress: "",
       password: "",
-      passwordConfirm: "",
     },
   });
 
