@@ -209,21 +209,17 @@
 
   .Typewriter {
     display: inline-block;
-
     direction: rtl;
-
     gap: 2px;
   }
 
   .cursor {
     color: #39ddc9;
-
     animation: blinker 1s linear infinite;
   }
 
   ::selection {
     background-color: #39ddc9; /* Replace with your color */
-
     color: #1f2023;
   }
 
@@ -236,7 +232,6 @@
 
 @font-face {
   font-family: Yekan Bakh;
-
   src: url("/fonts/YekanBakh-Regular.woff");
 }
 
