@@ -1,14 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription } from "@/components/ui/card";
 
+import { CreatorPosts } from "./CreatorPosts";
+
 export const Home = () => {
   return (
-    <div>
-      <Card className="custom-gradient d-rtl container mb-12 w-5/6 rounded-sm shadow-lg shadow-button-color/15  md:w-1/2">
+    <div className="d-rtl mx-auto w-5/6  sm:w-2/3">
+      <Card className="custom-gradient  mb-12  rounded-sm shadow-lg shadow-button-color/15 ">
         <h1 className="mb-4 text-xl font-bold text-button-color">
           پاترئون شما آماده‌ست
         </h1>
-        <CardDescription className=" mb-6 text-xl text-white">
+        <CardDescription className=" mb-6 text-justify text-xl text-white">
           با اضافه کردن جزئیات, به بازدید کننده‌های پیجت کمک کن که بهتر تورو
           بشناسن؛ پلن‌هات رو باهاشون به اشتراک بذار.
         </CardDescription>
@@ -63,11 +65,11 @@ export const Home = () => {
           </div>
         </CardContent>
       </Card>
-      <Card className="custom-gradient d-rtl container  mb-12 w-5/6 rounded-sm shadow-lg shadow-button-color/15  md:w-1/2">
+      <Card className="custom-gradient   mb-12  rounded-sm shadow-lg shadow-button-color/15 ">
         <h1 className="mb-4 text-xl font-bold text-button-color">
           راه‌هایی برای کسب درآمد
         </h1>
-        <CardDescription className=" mb-6 text-xl text-white">
+        <CardDescription className=" mb-6 text-justify text-xl text-white">
           پاترئون. فضایی رایگان برای تو و طرفدارانت. برای رشد کسب و کارت به
           راحتی به آثارت رو به دیگران ارائه بده.
         </CardDescription>
@@ -75,7 +77,7 @@ export const Home = () => {
           <div className="border-gradient-l absolute right-1/2 w-1/2 sm:w-1/2 " />
           <div className="border-gradient-r absolute left-1/2 w-1/2 sm:w-1/2 " />
         </div>
-        <p className="mt-10 text-xl text-primary-text">
+        <p className="mt-10 text-justify text-xl text-primary-text">
           محصولات دیجیتالیت رو, مثل ویدیوها و عکس‌ها, مستقیما روی پاترئون به
           دیگران بفروش. عضویت لازم نیست.
         </p>
@@ -85,6 +87,7 @@ export const Home = () => {
           </Button>
         </div>
       </Card>
+      <CreatorPosts />
     </div>
   );
 };
