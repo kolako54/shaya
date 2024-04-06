@@ -61,8 +61,8 @@ export const CreatorPosts = () => {
           سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
           متنوع با هدف بهبود ابزارهای کاربردی می باشد
         </p>
-        <div className="flex flex-wrap items-center justify-center gap-2 md:justify-between">
-          <div className="my-4 flex gap-2">
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-2 md:justify-between">
+          <div className="flex gap-2">
             <img className="w-5" src="/icons/post-icons/lock.png" alt="lock" />
             <span className="self-end text-sm text-primary-text">
               خریداری توسط اعضا
@@ -70,7 +70,7 @@ export const CreatorPosts = () => {
           </div>
           <PostIcons />
         </div>
-        <div className="relative mb-6">
+        <div className="relative py-6">
           <div className="border-gradient-l absolute right-1/2 w-1/2 sm:w-1/2 " />
           <div className="border-gradient-r absolute left-1/2 w-1/2 sm:w-1/2 " />
         </div>
@@ -101,8 +101,8 @@ export const CreatorPosts = () => {
             ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
             کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-2 md:justify-between">
-            <div className="mt-4 flex gap-2">
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-2 md:justify-between">
+            <div className="flex gap-2">
               <img
                 className="w-5"
                 src="/icons/post-icons/lock.png"
