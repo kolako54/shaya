@@ -1,6 +1,8 @@
 import { NavLink, useLocation } from "react-router-dom";
 import { twMerge } from "tailwind-merge";
 
+import { creatorHeaderLinks } from "../constants";
+
 export const CreatorHeader = () => {
   const { pathname } = useLocation();
   return (
@@ -22,66 +24,33 @@ export const CreatorHeader = () => {
           src="/images/profile-image.png"
           alt="profile-img"
         />
-
-        <ul className="custom-scroll">
-          <nav className="d-rtl flex justify-center gap-8 pb-2 text-lg  text-white *:transition-all *:duration-500 hover:*:text-button-color  sm:*:text-xl md:gap-16">
-            <NavLink className="group relative" to="#">
-              <li className="mb-1 text-nowrap">درباره‌ی من</li>
-              <div
-                className={twMerge(
-                  "absolute bottom-0 right-1/2 size-[.4rem] hidden rounded-full transition-all duration-500 bg-button-color",
-                  "group-hover:bg-button-color group-hover:block",
-                  pathname === "/creator/about" ? "block" : "",
-                )}
-              />
-            </NavLink>
-            <NavLink className="group relative" to="#">
-              <li className="mb-1">عضویت</li>
-              <div
-                className={twMerge(
-                  "absolute bottom-0 right-1/2 size-[.4rem] hidden rounded-full transition-all duration-500 bg-button-color",
-                  "group-hover:bg-button-color group-hover:block",
-                  pathname === "/creator/membership" ? "block" : "",
-                )}
-              />
-            </NavLink>
-            <NavLink className="group relative " to="#">
-              <li className="mb-1">خرید</li>
-              <div
-                className={twMerge(
-                  "absolute bottom-0 right-1/2 size-[.4rem] hidden rounded-full transition-all duration-500 bg-button-color",
-                  "group-hover:bg-button-color group-hover:block",
-                  pathname === "/creator/shop" ? "block" : "",
-                )}
-              />
-            </NavLink>
-            <NavLink className="group relative" to="#">
-              <li className="mb-1">کالکشن</li>
-              <div
-                className={twMerge(
-                  "absolute bottom-0 right-1/2 size-[.4rem] hidden rounded-full transition-all duration-500 bg-button-color",
-                  "group-hover:bg-button-color group-hover:block",
-                  pathname === "/creator/collection" ? "block" : "",
-                )}
-              />
-            </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                twMerge("group relative", isActive ? " text-button-color" : "")
-              }
-              to="/creator"
-            >
-              <li className="mb-1">خانه</li>
-              <div
-                className={twMerge(
-                  "absolute bottom-0 right-1/2   size-[.4rem] rounded-full  bg-button-color",
-                  "group-hover:bg-button-color group-hover:block",
-                  pathname === "/creator" ? "block" : "hidden",
-                )}
-              />
-            </NavLink>
-          </nav>
-        </ul>
+        <nav className="custom-scroll">
+          <ul className="d-rtl flex justify-center gap-8 pb-2 md:gap-16 ">
+            {creatorHeaderLinks.map((link) => {
+              const isActive = pathname === link.path;
+              return (
+                <li key={link.label} className="group relative">
+                  <NavLink
+                    className={twMerge(
+                      "text-lg text-white  transition duration-500 hover:text-button-color ",
+                      isActive && "text-button-color",
+                    )}
+                    to={link.path}
+                  >
+                    {link.label}
+                  </NavLink>
+                  <div
+                    className={twMerge(
+                      "absolute bottom-0 right-1/2 translate-y-full size-[.4rem] hidden rounded-full transition-all duration-500 bg-button-color",
+                      "group-hover:bg-button-color group-hover:block",
+                      isActive && "block",
+                    )}
+                  />
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
       </div>
     </>
   );
