@@ -24,6 +24,7 @@ export const CreatorPosts = () => {
         </div>
         <div className="d-rtl flex flex-wrap items-center gap-8 md:flex-nowrap">
           <Input
+            id="search"
             className="shrink-0 border-none bg-outline-color/80 text-white placeholder-shown:placeholder:text-primary-text md:shrink"
             type="search"
             placeholder="جستجوی پست‌ها..."
@@ -81,6 +82,7 @@ export const CreatorPosts = () => {
             alt="profile"
           />
           <Textarea
+            id="comment"
             placeholder="گفتگو رو شروع کن..."
             className=" bg-[#2E2F31] text-white"
           />
@@ -125,6 +127,7 @@ export const CreatorPosts = () => {
               alt="profile"
             />
             <Textarea
+              id="comment2"
               placeholder="گفتگو رو شروع کن..."
               className=" bg-[#2E2F31] text-white"
             />
