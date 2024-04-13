@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 
 import { CreatorLayout } from "./features/Creator/containers/CreatorLayout";
+import { CreatorMyPage } from "./features/Creator/containers/CreatorMyPage";
 import {
   AboutMe,
   Collection,
@@ -24,12 +25,14 @@ const App = () => {
       </Route>
 
       {/* Creator Routes */}
-      <Route path="/creator" element={<CreatorLayout />}>
-        <Route index element={<Home />} />
-        <Route path="/creator/collection" element={<Collection />} />
-        <Route path="/creator/shop" element={<Shop />} />
-        <Route path="/creator/membership" element={<Membership />} />
-        <Route path="/creator/about" element={<AboutMe />} />
+      <Route element={<CreatorLayout />}>
+        <Route path="/creator" element={<CreatorMyPage />}>
+          <Route index element={<Home />} />
+          <Route path="/creator/collection" element={<Collection />} />
+          <Route path="/creator/shop" element={<Shop />} />
+          <Route path="/creator/membership" element={<Membership />} />
+          <Route path="/creator/about" element={<AboutMe />} />
+        </Route>
       </Route>
     </Routes>
   );
