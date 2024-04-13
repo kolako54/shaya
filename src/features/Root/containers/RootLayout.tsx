@@ -6,7 +6,7 @@ import { Header } from "../components/Header";
 import { HeaderSearch } from "../components/HeaderSearch";
 import { MainHome } from "../components/MainHome";
 
-export const HomePage = () => {
+export const RootLayout = () => {
   return (
     <>
       <Navbar />
@@ -15,7 +15,6 @@ export const HomePage = () => {
         <HeaderSearch />
         <MainHome />
         <CarouselPic />
-        {/* Cardbox  */}
       </div>
       <Footer />
     </>
