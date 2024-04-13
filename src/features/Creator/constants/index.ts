@@ -20,3 +20,11 @@ export const creatorHeaderLinks = [
     label: "خانه",
   },
 ];
+
+export const icons = {
+  edit: "icons/post-icons/edit.png",
+  delete: "icons/post-icons/delete.png",
+  reply: "icons/post-icons/reply.png",
+  comment: "icons/post-icons/comment.png",
+  like: "icons/post-icons/like.png",
+};
