@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription } from "@/components/ui/card";
 
-import { CreatorPosts } from "./CreatorPosts";
+import { CreatorPosts } from "../components/CreatorPosts";
 
-export const Home = () => {
+const Home = () => {
   return (
     <div className="d-rtl mx-auto w-5/6  sm:w-2/3">
       <Card className="custom-gradient  mb-12  rounded-sm shadow-lg shadow-button-color/15 ">
@@ -91,3 +91,5 @@ export const Home = () => {
     </div>
   );
 };
+
+export default Home;

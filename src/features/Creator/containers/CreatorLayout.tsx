@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 import { CreatorHeader } from "../components/CreatorHeader";
 import { CreatorSidebar } from "../components/CreatorSidebar";
 
-export const CreatorPage = () => {
+export const CreatorLayout = () => {
   return (
     <div className="min-h-screen sm:flex  sm:overflow-x-clip ">
       <div className="grow">

@@ -1,22 +1,35 @@
 import { Route, Routes } from "react-router-dom";
 
-import { Home } from "./features/Creator/components/Home";
-import { CreatorPage } from "./features/Creator/containers/CreatorPage";
+import { CreatorLayout } from "./features/Creator/containers/CreatorLayout";
+import {
+  AboutMe,
+  Collection,
+  Home,
+  Membership,
+  Shop,
+} from "./features/Creator/pages";
 import { Login } from "./features/Form/components/Login";
 import { Signup } from "./features/Form/components/Signup";
 import { AuthLayout } from "./features/Form/containers/AuthLayout";
-import { HomePage } from "./features/Root/containers/HomePage";
+import { RootLayout } from "./features/Root/containers/RootLayout";
 
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<HomePage />} />
+      <Route path="/" element={<RootLayout />} />
+
       <Route element={<AuthLayout />}>
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
       </Route>
-      <Route element={<CreatorPage />}>
-        <Route path="/creator" element={<Home />} />
+
+      {/* Creator Routes */}
+      <Route path="/creator" element={<CreatorLayout />}>
+        <Route index element={<Home />} />
+        <Route path="/creator/collection" element={<Collection />} />
+        <Route path="/creator/shop" element={<Shop />} />
+        <Route path="/creator/membership" element={<Membership />} />
+        <Route path="/creator/about" element={<AboutMe />} />
       </Route>
     </Routes>
   );
