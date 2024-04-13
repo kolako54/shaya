@@ -8,7 +8,7 @@ export const CreatorSidebar = () => {
 
   return (
     <>
-      <div className="hidden flex-col items-end bg-secondary-color pl-4 pr-10  shadow-lg shadow-black/60 sm:flex lg:px-20 ">
+      <div className="fixed right-0 top-0 hidden min-h-screen w-1/5 flex-col items-end bg-secondary-color pr-8  shadow-lg shadow-black/60 sm:flex lg:px-20 ">
         <img
           className="w-14 self-center py-8"
           src="/icons/main logo.png"

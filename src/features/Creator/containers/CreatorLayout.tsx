@@ -1,18 +1,14 @@
 import { Outlet } from "react-router-dom";
 
-import { CreatorHeader } from "../components/CreatorHeader";
 import { CreatorSidebar } from "../components/CreatorSidebar";
 
 export const CreatorLayout = () => {
   return (
-    <div className="min-h-screen sm:flex  sm:overflow-x-clip ">
-      <div className="grow">
-        <CreatorHeader />
-        <div className="mt-16">
-          <Outlet />
-        </div>
-      </div>
+    <div className="min-h-screen sm:overflow-x-clip ">
       <CreatorSidebar />
+      <div className="sm:w-4/5">
+        <Outlet />
+      </div>
     </div>
   );
 };
