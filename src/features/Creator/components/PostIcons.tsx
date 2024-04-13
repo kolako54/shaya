@@ -1,29 +1,32 @@
-export const PostIcons = () => {
-  const icons = {
-    edit: "icons/post-icons/edit.png",
-    delete: "icons/post-icons/delete.png",
-    reply: "icons/post-icons/reply.png",
-    comment: "icons/post-icons/comment.png",
-    like: "icons/post-icons/like.png",
-  };
+import { twMerge } from "tailwind-merge";
 
+import { icons } from "../constants";
+import type { IconsProps } from "../types";
+
+const Icons = ({ children, isActive }: IconsProps) => {
+  return (
+    <button className={twMerge(isActive && "bg-black")}>{children}</button>
+  );
+};
+
+export const PostIcons = () => {
   return (
     <div className="flex items-center gap-4">
-      <button>
+      <Icons>
         <img src={icons.edit} alt="edit" />
-      </button>
-      <button>
+      </Icons>
+      <Icons>
         <img src={icons.delete} alt="delete" />
-      </button>
-      <button>
+      </Icons>
+      <Icons>
         <img src={icons.reply} alt="reply" />
-      </button>
-      <button>
-        <img src={icons.comment} alt="comment" />
-      </button>
-      <button>
-        <img src={icons.like} alt="like" />
-      </button>
+      </Icons>
+      <Icons>
+        <img src={icons.comment} alt="comments" />
+      </Icons>
+      <Icons>
+        <img src={icons.like} alt="likes" />
+      </Icons>
     </div>
   );
 };
